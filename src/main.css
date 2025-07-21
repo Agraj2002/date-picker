@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply bg-gray-900 text-gray-100 antialiased;
+  }
+}
+
+
+@layer components {
+  .calendar {
+    @apply grid grid-cols-7 gap-2 p-4 rounded-lg bg-[#1e1e1e];
+  }
+
+  .calendar-day {
+    @apply text-center p-2 border border-[#2c2c2c] rounded-md cursor-pointer text-[#e0e0e0];
+  }
+
+  .selected-day {
+    @apply bg-[#1e88e5] text-white font-bold;
+  }
+}
